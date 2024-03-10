@@ -1,0 +1,65 @@
+<div class="container-fluid" id="hero">
+    <div class="container">
+      <div class="row">
+        <!-- Columna izquierda con contenido -->
+        <div class="col-md-6">
+          <!-- Imagen -->
+          <img src="" alt="Imagen" class="img-fluid">
+  
+          <!-- Título -->
+          <h2>Título de la Sección</h2>
+  
+          <!-- Párrafo -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  
+          <!-- Iconos de redes sociales -->
+          <div class="social-icons">
+            <!-- Inserta aquí tus iconos de redes sociales -->
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+  
+          <!-- Botones con iconos a la izquierda -->
+          <button class="btn btn-primary"><i class="fas fa-check-circle"></i> Botón 1</button>
+          <button class="btn btn-secondary"><i class="fas fa-times-circle"></i> Botón 2</button>
+        </div>
+  
+        <!-- Columna derecha con menú de pestañas (tabs) -->
+        <div class="col-md-6">
+          <!-- Menú de pestañas -->
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" id="tab1" data-bs-toggle="tab" href="#contenido1">Tab 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="tab2" data-bs-toggle="tab" href="#contenido2">Tab 2</a>
+            </li>
+            <!-- Agrega más pestañas según sea necesario -->
+          </ul>
+  
+          <!-- Contenido de las pestañas -->
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="contenido1">
+              <p>Contenido de la pestaña 1.</p>
+            </div>
+            <div class="tab-pane fade" id="contenido2">
+              <p>Contenido de la pestaña 2.</p>
+            </div>
+            <!-- Agrega más contenido según sea necesario -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <style>
+    #hero{
+        min-height: 100vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: aqua;
+    }
+  </style>
