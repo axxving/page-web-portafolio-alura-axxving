@@ -7,7 +7,7 @@
                 <img src="/imgs/avatar.png" alt="Avatar" class="img-fluid mb-3" width="250">
 
                 <!-- Título de la Sección -->
-                <h2>Mi Trayectoria como Desarrollador Front-End</h2>
+                <h2>Mi Trayectoria como Desarrollador <span>Front-End</span></h2>
 
                 <!-- Descripción personal -->
                 <p>Soy un apasionado desarrollador front-end con experiencia en la creación de interfaces web atractivas y funcionales. Me esfuerzo por combinar diseño y desarrollo para ofrecer experiencias de usuario excepcionales.</p>
@@ -20,8 +20,8 @@
                 </div>
 
                 <!-- Botones con iconos a la izquierda -->
-                <button class="btn btn-primary mt-3"><i class="fas fa-code"></i> Proyectos</button>
-                <button class="btn btn-secondary mt-3"><i class="fas fa-file"></i> Descargar CV</button>
+                <button class="btn btn-outline-warning mt-3"><i class="fas fa-code"></i> Proyectos</button>
+                <button class="btn btn-outline-warning mt-3"><i class="fas fa-file"></i> Descargar CV</button>
             </div>
 
             <!-- Columna derecha con menú de pestañas (tabs) -->
@@ -52,10 +52,19 @@
 
 <style>
     #hero {
+        background: linear-gradient(to right, #110C24, #2F2953, #03002c);
         min-height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #61dafb; /* Color azul React */
+    }
+
+    span{
+        color: #CE7A1C;
+    }
+
+    .fas{
+        margin-right: 8px;
     }
 </style>
