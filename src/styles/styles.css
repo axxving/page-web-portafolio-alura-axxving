@@ -4,3 +4,7 @@
     font-family: "Madimi One", sans-serif;
     color: #f0f8ff;
 }
+
+.card{
+    background-color: blueviolet !important;
+}
