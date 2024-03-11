@@ -6,7 +6,7 @@ interface Props {
   titulo: string;
   parrafo: string;
   href: string;
-  tecnologias: { nombre: string; icono: string }[];
+  tecnologias: { nombre: string; icono: string; color: string }[];
 }
 
 const astroProps = Astro.props as Props;
@@ -23,6 +23,7 @@ const { titulo, parrafo, href, tecnologias } = astroProps;
           <Badge
             nombre={tecnologia.nombre}
             icono={tecnologia.icono}
+            color={tecnologia.color}
           />
         ))}
       </div>
