@@ -2,11 +2,13 @@
 import Card from "./Card.astro";
 import Experiencia from "./Experiencia.astro";
 import Tecnologias from "./Tecnologias.astro";
+import Contacto from "./Contacto.astro";
 
 import Scripts from "./Scripts.astro";
 import dataCards from "../config/dataCards.json";
 ---
-<Scripts></Scripts>
+
+<Scripts />
 <div class="container-fluid pt-3 pb-3" id="hero">
     <div class="container">
         <div class="row">
@@ -69,7 +71,8 @@ import dataCards from "../config/dataCards.json";
                             class="nav-link"
                             id="tab2"
                             data-bs-toggle="tab"
-                            href="#contenido2">Páginas Web
+                            href="#contenido2"
+                            >Páginas Web
                         </a>
                     </li>
                     <li class="nav-item">
@@ -77,7 +80,17 @@ import dataCards from "../config/dataCards.json";
                             class="nav-link"
                             id="tab3"
                             data-bs-toggle="tab"
-                            href="#contenido3">Habilidades
+                            href="#contenido3"
+                            >Habilidades
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            id="tab4"
+                            data-bs-toggle="tab"
+                            href="#contenido4"
+                            >Contacto
                         </a>
                     </li>
                 </ul>
@@ -86,7 +99,7 @@ import dataCards from "../config/dataCards.json";
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="contenido1">
                         <!-- Contenido de la pestaña de habilidades -->
-                        <Experiencia></Experiencia>
+                        <Experiencia />
                     </div>
 
                     <div class="tab-pane fade" id="contenido2">
@@ -106,9 +119,14 @@ import dataCards from "../config/dataCards.json";
                         </div>
                     </div>
 
-                    <div class="tab-pane fade show active" id="contenido3">
+                    <div class="tab-pane fade" id="contenido3">
                         <!-- Contenido de la pestaña de habilidades -->
-                        <Tecnologias></Tecnologias>
+                        <Tecnologias />
+                    </div>
+
+                    <div class="tab-pane fade" id="contenido4">
+                        <!-- Contenido de la pestaña de habilidades -->
+                        <Contacto />
                     </div>
                 </div>
             </div>
