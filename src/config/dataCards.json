@@ -1,9 +1,43 @@
 {
   "cards": [
     {
+      "imagen":"/imgs/market-up.png",
       "href": "https://market-up.netlify.app/",
       "titulo": "Página Web MarketUP",
       "parrafo": "Desarrollo de página web para MarketUP con una interfaz amigable y funcional.",
+      "tecnologias": [
+        {
+          "nombre": "HTML",
+          "icono": "bx bxl-html5",
+          "color": "bg-html"
+        },
+        {
+          "nombre": "CSS",
+          "icono": "bx bxl-css3",
+          "color": "bg-css"
+        },
+        {
+          "nombre": "JavaScript",
+          "icono": "bx bxl-javascript",
+          "color": "bg-js"
+        },
+        {
+          "nombre": "Bootstrap 5",
+          "icono": "bi bi-bootstrap-fill",
+          "color": "bg-bootstrap"
+        },
+        {
+          "nombre": "Astro",
+          "icono": "bi bi-rocket-fill",
+          "color": "bg-astro"
+        }
+      ]
+    },
+    {
+      "imagen":"/imgs/portafolio-axxving.png",
+      "href": "https://axxving.netlify.app/",
+      "titulo": "Portfolio axxving",
+      "parrafo": "Desarrollo de portfolio web para Axxving con un enfoque centrado en la experiencia del usuario.",
       "tecnologias": [
         {
           "nombre": "HTML",
