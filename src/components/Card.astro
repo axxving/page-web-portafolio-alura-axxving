@@ -1,6 +1,7 @@
 ---
 // Card.astro
 import Badge from "./Badge.astro";
+import Scripts from "./Scripts.astro";
 
 interface Props {
   imagen: string;
@@ -13,6 +14,7 @@ interface Props {
 const astroProps = Astro.props as Props;
 const {imagen, titulo, parrafo, href, tecnologias } = astroProps;
 ---
+<Scripts></Scripts>
 <div class="col-md-6">
   <div class="card mb-3">
     <img src={imagen} class="card-img-top" alt="Imagen de la card" />
