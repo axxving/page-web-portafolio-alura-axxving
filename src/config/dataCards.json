@@ -3,18 +3,7 @@
     {
       "href": "https://docs.astro.build/",
       "titulo": "Documentation",
-      "parrafo": "Learn how Astro works and explore the official API docs.",
-      "tecnologia": [
-        {
-          "tecnologia": "HTML"
-        },
-        {
-          "tecnologia": "CSS"
-        },
-        {
-          "tecnologia": "JS"
-        }
-      ]
+      "parrafo": "Learn how Astro works and explore the official API docs."
     },
     {
       "href": "https://docs.astro.build/",
