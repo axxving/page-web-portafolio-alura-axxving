@@ -1,0 +1,46 @@
+---
+interface Props {
+    titulo: string;
+    parrafo: string;
+    href: string;
+}
+
+const { titulo, parrafo, href } = Astro.props;
+---
+
+<div class="col-md-6">
+    <div class="card mb-3">
+        <!-- Imagen en la parte superior de la card -->
+        <img
+            src="/imgs/market-up.png"
+            class="card-img-top"
+            alt="Imagen de la card"
+        />
+        <div class="card-body">
+            <!-- Título -->
+            <h5 class="card-title">{titulo}</h5>
+            <!-- Párrafo -->
+            <p class="card-text">{parrafo}</p>
+            <!-- Tags -->
+            <div class="contenedor-badges">
+                <span class="badge bg-html text-light"
+                    ><i class="bx bxl-html5"></i> HTML</span
+                >
+                <span class="badge bg-css text-light"
+                    ><i class="bx bxl-css3"></i> CSS</span
+                >
+                <span class="badge bg-js text-dark"
+                    ><i class="bx bxl-javascript"></i> JavaScript</span
+                >
+                <span class="badge bg-bootstrap text-light"
+                    ><i class="bi bi-bootstrap"></i>
+                    Bootstrap</span
+                >
+                <span class="badge bg-astro text-light"> </span>
+                <!-- Botón a la derecha -->
+                <a href={href} class="btn btn-primary float-end">Ver más</a>
+            </div>
+        </div>
+        <!-- Repite esta estructura para cada card adicional -->
+    </div>
+</div>

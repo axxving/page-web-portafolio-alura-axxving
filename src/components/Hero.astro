@@ -1,3 +1,8 @@
+---
+import Card from "./Card.astro";
+import dataCards from "../config/dataCards.json"; 
+---
+
 <div class="container-fluid pt-5 pb-5" id="hero">
     <div class="container">
         <div class="row">
@@ -74,115 +79,16 @@
                     <div class="tab-pane fade" id="contenido2">
                         <!-- Contenido de la pestaña de proyectos -->
                         <div class="row mt-3">
-                            <div class="col-md-6">
-                                <div class="card mb-3">
-                                    <!-- Imagen en la parte superior de la card -->
-                                    <img
-                                        src="/imgs/market-up.png"
-                                        class="card-img-top"
-                                        alt="Imagen de la card"
+                            {
+                                dataCards.cards.map((card, index) => (
+                                    <Card
+                                        href={card.href}
+                                        titulo={card.titulo}
+                                        parrafo={card.parrafo}
                                     />
-                                    <div class="card-body">
-                                        <!-- Título -->
-                                        <h5 class="card-title">
-                                            Página Web MarketUP
-                                        </h5>
-                                        <!-- Párrafo -->
-                                        <p class="card-text">
-                                            Descripción corta del proyecto.
-                                        </p>
-                                        <!-- Tags -->
-                                        <div class="contenedor-badges">
-                                            <span
-                                                class="badge bg-html text-light"
-                                                ><i class="bx bxl-html5"></i> HTML</span
-                                            >
-                                            <span
-                                                class="badge bg-css text-light"
-                                                ><i class="bx bxl-css3"></i> CSS</span
-                                            >
-                                            <span class="badge bg-js text-dark"
-                                                ><i class="bx bxl-javascript"
-                                                ></i> JavaScript</span
-                                            >
-                                            <span
-                                                class="badge bg-bootstrap text-light"
-                                                ><i class="bi bi-bootstrap"></i>
-                                                Bootstrap</span
-                                            >
-                                            <span
-                                                class="badge bg-astro text-light"
-                                            >
-                                                <img
-                                                    class="icono-astro"
-                                                    width="18"
-                                                    src="/imgs/favicon.png"
-                                                    alt=""
-                                                /> Astro
-                                            </span>
-                                            
-                                        </div>
-                                        <!-- Botón a la derecha -->
-                                        <a
-                                        href="#"
-                                        class="btn btn-primary float-end"
-                                        >Ver más</a
-                                    >
-                                    </div>
-                                </div>
-                                <!-- Repite esta estructura para cada card adicional -->
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card mb-3">
-                                    <!-- Imagen en la parte superior de la card -->
-                                    <img
-                                        src="/imgs/market-up.png"
-                                        class="card-img-top"
-                                        alt="Imagen de la card"
-                                    />
-                                    <div class="card-body">
-                                        <!-- Título -->
-                                        <h5 class="card-title">
-                                            Página Web MarketUP
-                                        </h5>
-                                        <!-- Párrafo -->
-                                        <p class="card-text">
-                                            Descripción corta del proyecto.
-                                        </p>
-                                        <!-- Tags -->
-                                        <div class="contenedor-badges">
-                                            <span
-                                                class="badge bg-html text-light"
-                                                ><i class="bx bxl-html5"></i> HTML</span
-                                            >
-                                            <span
-                                                class="badge bg-css text-light"
-                                                ><i class="bx bxl-css3"></i> CSS</span
-                                            >
-                                            <span class="badge bg-js text-dark"
-                                                ><i class="bx bxl-javascript"
-                                                ></i> JavaScript</span
-                                            >
-                                            <span
-                                                class="badge bg-bootstrap text-light"
-                                                ><i class="bi bi-bootstrap"></i>
-                                                Bootstrap</span
-                                            >
-                                            <span
-                                                class="badge bg-astro text-light"
-                                            >
-                                            
-                                        </div>
-                                        <!-- Botón a la derecha -->
-                                        <a
-                                        href="#"
-                                        class="btn btn-primary float-end"
-                                        >Ver más</a
-                                    >
-                                    </div>
-                                </div>
-                                <!-- Repite esta estructura para cada card adicional -->
-                            </div>
+                                ))
+                            }
+
                         </div>
                     </div>
                 </div>
