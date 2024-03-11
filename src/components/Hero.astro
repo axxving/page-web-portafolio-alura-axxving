@@ -1,5 +1,7 @@
 ---
 import Card from "./Card.astro";
+import Experiencia from "./Experiencia.astro";
+
 import Scripts from "./Scripts.astro";
 import dataCards from "../config/dataCards.json";
 ---
@@ -58,7 +60,7 @@ import dataCards from "../config/dataCards.json";
                             class="nav-link active"
                             id="tab1"
                             data-bs-toggle="tab"
-                            href="#contenido1">Habilidades</a
+                            href="#contenido1">Experiencia</a
                         >
                     </li>
                     <li class="nav-item">
@@ -69,12 +71,21 @@ import dataCards from "../config/dataCards.json";
                             href="#contenido2">Páginas Web
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            id="tab3"
+                            data-bs-toggle="tab"
+                            href="#contenido3">Habilidades
+                        </a>
+                    </li>
                 </ul>
 
                 <!-- Contenido de las pestañas -->
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="contenido1">
                         <!-- Contenido de la pestaña de habilidades -->
+                        <Experiencia></Experiencia>
                     </div>
 
                     <div class="tab-pane fade" id="contenido2">
@@ -92,6 +103,11 @@ import dataCards from "../config/dataCards.json";
                                 ))
                             }
                         </div>
+                    </div>
+
+                    <div class="tab-pane fade show active" id="contenido3">
+                        <!-- Contenido de la pestaña de habilidades -->
+                        
                     </div>
                 </div>
             </div>
