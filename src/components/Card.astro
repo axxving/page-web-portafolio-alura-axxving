@@ -1,4 +1,7 @@
 ---
+import dataCards from "../config/dataCards.json"; 
+import Badge from "./Badge.astro";
+
 interface Props {
     titulo: string;
     parrafo: string;
@@ -23,23 +26,21 @@ const { titulo, parrafo, href } = Astro.props;
             <p class="card-text">{parrafo}</p>
             <!-- Tags -->
             <div class="contenedor-badges">
-                <span class="badge bg-html text-light"
-                    ><i class="bx bxl-html5"></i> HTML</span
-                >
-                <span class="badge bg-css text-light"
-                    ><i class="bx bxl-css3"></i> CSS</span
-                >
-                <span class="badge bg-js text-dark"
-                    ><i class="bx bxl-javascript"></i> JavaScript</span
-                >
-                <span class="badge bg-bootstrap text-light"
-                    ><i class="bi bi-bootstrap"></i>
-                    Bootstrap</span
-                >
-                <span class="badge bg-astro text-light"> </span>
-                <!-- Botón a la derecha -->
-                <a href={href} class="btn btn-primary float-end">Ver más</a>
+                {
+                    dataCards.cards.map((card, index) => (
+                      Array.isArray(card.tecnologia) && card.tecnologia.length > 0 ? (
+                        card.tecnologia.map((tecnologiaItem, tecnologiaIndex) => (
+                          <Badge
+                            key={tecnologiaIndex}
+                            tecnologia={tecnologiaItem.tecnologia}
+                            id={`tecnologia-${index + 1}-${tecnologiaIndex + 1}`}
+                          />
+                        ))
+                      ) : null
+                    ))
+                  }
             </div>
+            <a href={href} class="btn btn-primary float-end mt-3">Ver más</a>
         </div>
         <!-- Repite esta estructura para cada card adicional -->
     </div>
