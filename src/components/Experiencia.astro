@@ -33,10 +33,13 @@ const { titulo, fecha, parrafo } = astroProps;
         position: relative;
         overflow: hidden;
         background-color: #515179;
-        border: 2px solid #ffffff;
+        border: 2px solid #ffffff !important;
         transition: all ease-in-out 200ms;
         z-index: 1;
         min-height: 350px;
+        &:hover{
+            border: 2px solid #FFC107 !important;
+        }
     }
 
     .experiencia-card:after {
