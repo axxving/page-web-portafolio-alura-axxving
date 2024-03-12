@@ -12,9 +12,10 @@ interface Props {
 }
 
 const astroProps = Astro.props as Props;
-const {imagen, titulo, parrafo, href, tecnologias } = astroProps;
+const { imagen, titulo, parrafo, href, tecnologias } = astroProps;
 ---
-<Scripts></Scripts>
+
+<Scripts />
 <div class="col-md-6">
   <div class="card mb-3">
     <img src={imagen} class="card-img-top" alt="Imagen de la card" />
@@ -22,15 +23,21 @@ const {imagen, titulo, parrafo, href, tecnologias } = astroProps;
       <h5 class="card-title">{titulo}</h5>
       <p class="card-text">{parrafo}</p>
       <div class="contenedor-badges">
-        {tecnologias.map((tecnologia, index) => (
-          <Badge
-            nombre={tecnologia.nombre}
-            icono={tecnologia.icono}
-            color={tecnologia.color}
-          />
-        ))}
+        {
+          tecnologias.map((tecnologia, index) => (
+            <Badge
+              nombre={tecnologia.nombre}
+              icono={tecnologia.icono}
+              color={tecnologia.color}
+            />
+          ))
+        }
       </div>
-      <a target="_blank" href={href} class="btn btn-outline-warning float-end mt-3">Ver más</a>
+      <a
+        target="_blank"
+        href={href}
+        class="btn btn-outline-warning float-end mt-3">Ver más</a
+      >
     </div>
   </div>
 </div>

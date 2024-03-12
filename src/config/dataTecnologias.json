@@ -1,0 +1,25 @@
+{
+    "tecnologias": [
+      {
+        "color": "bg-html",
+        "icono": "bix bi-laptop",
+        "nombre": "HTML"
+      },
+      {
+        "color": "bg-css",
+        "icono": "bix bi-code-slash",
+        "nombre": "CSS"
+      },
+      {
+        "color": "bg-js",
+        "icono": "bix bi-node-minus-fill",
+        "nombre": "Node.js"
+      },
+      {
+        "color": "bg-bootstrap",
+        "icono": "bix bi-bootstrap",
+        "nombre": "Bootstrap"
+      }
+    ]
+  }
+  

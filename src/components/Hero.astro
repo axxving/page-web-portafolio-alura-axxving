@@ -11,6 +11,7 @@ import Scripts from "./Scripts.astro";
 // Importando la data del Json
 import dataCards from "../config/dataCards.json";
 import dataExperiencia from "../config/dataExperiencia.json";
+import dataTecnologias from "../config/dataTecnologias.json";
 ---
 
 <Scripts />
@@ -103,11 +104,11 @@ import dataExperiencia from "../config/dataExperiencia.json";
                 <!-- Contenido de las pestañas -->
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="contenido1">
-                        <!-- Contenido de la pestaña de habilidades -->
+                        <!-- Contenido de la pestaña de  -->
                         <div class="row mt-3">
                             {
                                 dataExperiencia.exp.map((exps, index) => (
-                                    <Experiencia 
+                                    <Experiencia
                                         titulo={exps.titulo}
                                         fecha={exps.fecha}
                                         parrafo={exps.parrafo}
@@ -136,7 +137,19 @@ import dataExperiencia from "../config/dataExperiencia.json";
 
                     <div class="tab-pane fade" id="contenido3">
                         <!-- Contenido de la pestaña de habilidades -->
-                        <Tecnologias />
+                        <div class="row mt-3">
+                            {
+                                dataTecnologias.tecnologias.map(
+                                    (tec, index) => (
+                                        <Tecnologias
+                                            color={tec.color}
+                                            nombre={tec.nombre}
+                                            icono={tec.icono}
+                                        />
+                                    )
+                                )
+                            }
+                        </div>
                     </div>
 
                     <div class="tab-pane fade" id="contenido4">

@@ -1,43 +1,54 @@
-<section class="container-fluid">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="text-left">Tecnologías Web</h2>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body">
-              <i class="bi bi-html5"></i>
-              <span class="text-right">HTML</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body">
-              <i class="bi bi-css3"></i>
-              <span class="text-right">CSS</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body">
-              <i class="bi bi-js"></i>
-              <span class="text-right">JavaScript</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body">
-              <i class="bi bi-bootstrap"></i>
-              <span class="text-right">Bootstrap</span>
-            </div>
-          </div>
-        </div>
-        <!-- Agrega más cards según sea necesario -->
+---
+interface Props {
+  icono: string;
+  nombre: string;
+  color: string;
+}
+
+const astroProps = Astro.props as Props;
+const { color, icono, nombre } = astroProps;
+---
+
+<div class="col-md-4">
+  <div class=`card ${color} mb-4 text-white card-tec`>
+    <div class="card-body card-tecnologia">
+      <div class="card-tecnologia-container">
+        <i class={icono}></i>
+        <span class="ms-2 titulo-tec">{nombre}</span>
       </div>
     </div>
-  </section>
-  
+  </div>
+</div>
+
+<style>
+  .titulo-tec{
+    font-size: 1.2rem;
+  }
+  .bix {
+    font-size: 1.5rem;
+  }
+  .card-tec {
+    border: 2px solid transparent !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .bg-html {
+    background-color: #e34f26 !important;
+  }
+
+  .bg-css {
+    background-color: #267fe4 !important;
+  }
+
+  .bg-js {
+    background-color: #f0db24ec !important;
+  }
+
+  .bg-bootstrap {
+    background-color: #9a3cf3 !important;
+  }
+
+  .bg-astro {
+    background-color: #e32665 !important;
+  }
+</style>
