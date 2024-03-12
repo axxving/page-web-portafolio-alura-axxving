@@ -1,52 +1,60 @@
-<section class="container-fluid mt-5">
-    <div class="container">
-        <!-- Título de la sección -->
-        <h2 class="text-start">Experiencia</h2>
+---
+// Card.astro
+import Scripts from "./Scripts.astro";
 
-        <!-- Dos cards -->
-        <div class="row mt-4">
-            <!-- Card 1 -->
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <!-- Título de la card 1 -->
-                        <h3 class="card-title">Desarrollador Frontend</h3>
-                        <!-- Fecha de la card 1 -->
-                        <p class="small">
-                            Período: Julio 2021 - Actualidad
-                        </p>
-                        <!-- Párrafo de la card 1 -->
-                        <p class="card-text">
-                            Desarrollador Frontend con formación en Programación Web (Front-end) en Instituto EMTECH. Experiencia destacada en Lexa Consulting, gestionando proyectos complejos utilizando HTML, CSS, JavaScript y Laravel. Enfoque en la creación de interfaces intuitivas y atractivas.
-                        </p>
-                    </div>
-                </div>
-            </div>
+interface Props {
+    titulo: string;
+    fecha: string;
+    parrafo: string;
+}
 
-            <!-- Card 2 -->
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body">
-                        <!-- Título de la card 2 -->
-                        <h3 class="card-title">Freelancer</h3>
-                        <!-- Fecha de la card 2 -->
-                        <p class="small">
-                            Período: Enero 2022 - Actualidad
-                        </p>
-                        <!-- Párrafo de la card 2 -->
-                        <p class="card-text">
-                            Reconocido a nivel nacional como finalista en la competencia de Sistema de Votación Remota en 2022. Certificaciones en Desarrollo Web Frontend (Emtech Institute) y Desarrollo Backend Alura One Oracle (Alura Latam). Entusiasta por contribuir a IntegraHR con habilidades frontend y capacidad para gestionar proyectos complejos.
-                        </p>
-                        <p class="card-text">
-                            Atentamente,
-                            <br>Irving Alejandro Hernández Ramírez
-                        </p>
-                    </div>
-                </div>
-            </div>
+const astroProps = Astro.props as Props;
+const { titulo, fecha, parrafo } = astroProps;
+---
+
+<!-- Card 1 -->
+<div class="col-md-6">
+    <div class="card experiencia-card mb-4">
+        <div class="card-body">
+            <!-- Título de la card 1 -->
+            <h4 class="card-title">{titulo}</h4>
+            <!-- Fecha de la card 1 -->
+            <p class="small">{fecha}</p>
+            <!-- Párrafo de la card 1 -->
+            <p class="card-text">
+                {parrafo}
+            </p>
         </div>
-        <!-- Fin de la fila -->
     </div>
-    <!-- Fin del contenedor interno -->
-</section>
-<!-- Fin del contenedor externo -->
+</div>
+
+<style>
+.experiencia-card {
+    position: relative;
+    overflow: hidden;
+    background-color: #515179 !important;
+    border: 2px solid #ffffff !important;
+    transition: all ease-in-out 200ms;
+    z-index: 1;
+    min-height: 350px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #383855 !important;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transition: all 0.3s ease-in-out;
+        border-top: 50px !important;
+    }
+
+    &:hover:after {
+        height: 0; /* El fondo se llena al hacer hover */
+    }
+}
+
+</style>
