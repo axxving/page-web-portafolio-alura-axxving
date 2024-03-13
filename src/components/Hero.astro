@@ -164,33 +164,60 @@ import dataTecnologias from "../config/dataTecnologias.json";
             </div>
         </div>
     </div>
-
-    <style>
-        #hero {
-            background: linear-gradient(to right, #110c24, #2f2953, #03002c);
-
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        span {
-            color: #ce7a1c;
-        }
-
-        .fas {
-            margin-right: 8px;
-        }
-
-        .fa-facebook,
-        .fa-instagram {
-            font-size: 2rem;
-            margin-right: 10px;
-        }
-
-        .btn {
-            margin-top: 10px;
-        }
-    </style>
 </div>
+
+<style>
+    #hero {
+        background: linear-gradient(to right, #110c24, #2f2953, #03002c);
+
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    span {
+        color: #ce7a1c;
+    }
+
+    .fas {
+        margin-right: 8px;
+    }
+
+    .fa-facebook,
+    .fa-instagram {
+        font-size: 2rem;
+        margin-right: 10px;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+
+    /* Estilos para las tabs */
+    .nav-tabs {
+        border-bottom: none; /* Borde inferior */
+        margin-bottom: 15px; /* Espaciado inferior */
+    }
+
+    .nav-link {
+        color: #28234D; /* Color del texto normal */
+        background-color: transparent; /* Color de fondo de las tabs */
+        border: 1px solid #FFC107;
+        border-radius: 5px;
+        margin: 5px;
+        color: #FFC107;
+        transition: all ease-in-out 200ms;
+        &:hover{
+            background-color: #FFC107;
+            border: 1px solid #FFC107;
+            color: #110c24;
+        }
+    }
+
+    .nav-link.active {
+        color: #ffffff; /* Color del texto cuando la tab está activa */
+        background-color: #3d3769; /* Color de fondo cuando la tab está activa */
+        border-color: #3d3769; /* Borde cuando la tab está activa */
+    }
+</style>
