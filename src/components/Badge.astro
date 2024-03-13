@@ -11,7 +11,8 @@ interface Props {
 const astroProps = Astro.props as Props;
 const { nombre, icono, color } = astroProps;
 ---
-<Scripts></Scripts>
+
+<Scripts />
 <span class={`badge ${color} text-light`}>
     <i class={icono}></i>
     {nombre}

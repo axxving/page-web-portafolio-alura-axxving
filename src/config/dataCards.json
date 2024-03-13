@@ -1,7 +1,7 @@
 {
   "cards": [
     {
-      "imagen":"/imgs/market-up.png",
+      "imagen": "/imgs/market-up.png",
       "href": "https://market-up.netlify.app/",
       "titulo": "Página Web MarketUP",
       "parrafo": "Página Web.",
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "imagen":"/imgs/portafolio-axxving.png",
+      "imagen": "/imgs/portafolio-axxving.png",
       "href": "https://axxving.netlify.app/",
       "titulo": "Portfolio axxving",
       "parrafo": "Página Web.",
