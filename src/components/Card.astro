@@ -6,22 +6,20 @@ import Scripts from "./Scripts.astro";
 interface Props {
   imagen: string;
   titulo: string;
-  parrafo: string;
   href: string;
   tecnologias: { nombre: string; icono: string; color: string }[];
 }
 
 const astroProps = Astro.props as Props;
-const { imagen, titulo, parrafo, href, tecnologias } = astroProps;
+const { imagen, titulo, href, tecnologias } = astroProps;
 ---
 
 <Scripts />
 <div class="col-md-6">
   <div class="card mb-3">
-    <img src={imagen} class="card-img-top" alt="Imagen de la card" />
+    <img src={imagen} class="card-img-top p-0 m-0" alt="Imagen de la card" />
     <div class="card-body">
-      <h5 class="card-title">{titulo}</h5>
-      <p class="card-text">{parrafo}</p>
+      <h5 class="card-title mb-3">{titulo}</h5>
       <div class="contenedor-badges">
         {
           tecnologias.map((tecnologia, index) => (
