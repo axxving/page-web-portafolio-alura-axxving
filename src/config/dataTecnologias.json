@@ -1,25 +1,54 @@
 {
-    "tecnologias": [
-      {
-        "color": "bg-html",
-        "icono": "bix bi-laptop",
-        "nombre": "HTML"
-      },
-      {
-        "color": "bg-css",
-        "icono": "bix bi-code-slash",
-        "nombre": "CSS"
-      },
-      {
-        "color": "bg-js",
-        "icono": "bix bi-node-minus-fill",
-        "nombre": "Node.js"
-      },
-      {
-        "color": "bg-bootstrap",
-        "icono": "bix bi-bootstrap",
-        "nombre": "Bootstrap"
-      }
-    ]
-  }
-  
+  "tecnologias": [
+    {
+      "color": "bg-html",
+      "icono": "bix bx bxl-html5",
+      "nombre": "HTML"
+    },
+    {
+      "color": "bg-css",
+      "icono": "bix bx bxl-css3",
+      "nombre": "CSS"
+    },
+    {
+      "color": "bg-js",
+      "icono": "bix bx bxl-javascript",
+      "nombre": "JavaScript"
+    },
+    {
+      "color": "bg-vue",
+      "icono": "bix bx bxl-vuejs",
+      "nombre": "Vue.js"
+    },
+    {
+      "color": "bg-sass",
+      "icono": "bix bx bxl-sass",
+      "nombre": "Sass"
+    },
+    {
+      "color": "bg-jquery",
+      "icono": "bix bx bxl-jquery",
+      "nombre": "jQuery"
+    },
+    {
+      "color": "bg-bootstrap",
+      "icono": "bix bx bxl-bootstrap",
+      "nombre": "Bootstrap 5"
+    },
+    {
+      "color": "bg-astro",
+      "icono": "bix bi-rocket-fill",
+      "nombre": "Astro"
+    },
+    {
+      "color": "bg-git",
+      "icono": "bix bi-git",
+      "nombre": "Git"
+    },
+    {
+      "color": "bg-github",
+      "icono": "bix bi-github",
+      "nombre": "GitHub"
+    }
+  ]
+}

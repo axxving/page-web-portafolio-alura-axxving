@@ -5,16 +5,16 @@
     color: #f0f8ff;
 }
 
-.card{
-    border: 2px solid  #FFC107 !important;
+.card {
+    border: 2px solid #FFC107 !important;
     background-color: transparent !important;
 }
 
-.card-title{
+.card-title {
     color: #f0f8ff !important;
 }
 
-img{
+img {
     padding: 5px;
 }
 
@@ -33,26 +33,100 @@ img{
     padding: 0px;
 }
 
-.bi{
+.bi {
     margin-right: 5px;
 }
 
+/* HTML */
 .bg-html {
-    background-color: #e34f26;
+    background: linear-gradient(45deg, #E44D26, #F16529);
+  }
+  
+  /* CSS */
+  .bg-css {
+    background: linear-gradient(45deg, #264DE4, #2965F1);
+  }
+  
+  /* JavaScript */
+  .bg-js {
+    background: linear-gradient(45deg, #F0DB4F, #FFD700);
+  }
+  
+  /* React */
+  .bg-react {
+    background: linear-gradient(45deg, #61DAFB, #00BFFF);
+  }
+  
+  /* Node.js */
+  .bg-nodejs {
+    background: linear-gradient(45deg, #8CC84B, #6DB35A);
+  }
+  
+  /* Angular */
+  .bg-angular {
+    background: linear-gradient(45deg, #DD0031, #C3002F);
+  }
+  
+  /* Vue.js */
+  .bg-vue {
+    background: linear-gradient(45deg, #41B883, #34495E);
+  }
+  
+  /* Sass */
+  .bg-sass {
+    background: linear-gradient(45deg, #CC6699, #CD6799);
+  }
+  
+  /* jQuery */
+  .bg-jquery {
+    background: linear-gradient(45deg, #0769AD, #4E92A5);
+  }
+  
+  /* Bootstrap 5 */
+  .bg-bootstrap {
+    background: linear-gradient(45deg, #7952B3, #563D7C);
+  }
+  
+  /* Astro Framework */
+  .bg-astro {
+    background: linear-gradient(45deg, #00AFF0, #0077CC);
+  }
+  
+  /* Git */
+  .bg-git {
+    background: linear-gradient(45deg, #F05032, #D14029);
+  }
+  
+  /* GitHub */
+  .bg-github {
+    background: linear-gradient(45deg, #181717, #24292E);
+  }
+  
+
+.tecnologia-container {
+    width: 100% !important;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.bg-css {
-    background-color: #267fe4;
+.bix {
+    margin-right: 10px;
+    color: #fff !important;
 }
 
-.bg-js {
-    background-color: #f0db24ec;
+.tecnologia-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    text-align: center;
+    width: 150px;
 }
 
-.bg-bootstrap {
-    background-color: #9a3cf3;
-}
-
-.bg-astro {
-    background-color: #e32665;
+.tecnologia-icon {
+    font-size: 1.5em;
 }

@@ -9,46 +9,85 @@ const astroProps = Astro.props as Props;
 const { color, icono, nombre } = astroProps;
 ---
 
-<div class="col-md-4">
-  <div class=`card ${color} mb-4 text-white card-tec`>
-    <div class="card-body card-tecnologia">
-      <div class="card-tecnologia-container">
-        <i class={icono}></i>
-        <span class="ms-2 titulo-tec">{nombre}</span>
-      </div>
-    </div>
-  </div>
+<!-- Tecnología 3 -->
+<div class=`tecnologia-box ${color}`>
+  <span class=`tecnologia-icon text-success ${icono}`></span>
+  <h6 class="tecnologia-nombre">{nombre}</h6>
 </div>
 
 <style>
-  .titulo-tec{
-    font-size: 1.2rem;
+  .tecnologia-nombre{
+    margin-top: 8px;
   }
+
   .bix {
-    font-size: 1.5rem;
-  }
-  .card-tec {
-    border: 2px solid transparent !important;
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-  }
-  .bg-html {
-    background-color: #e34f26 !important;
+    margin-right: 10px;
+    color: #fff !important;
   }
 
-  .bg-css {
-    background-color: #267fe4 !important;
-  }
+  /* HTML */
+.bg-html {
+  background: linear-gradient(45deg, #E44D26, #F16529);
+}
 
-  .bg-js {
-    background-color: #f0db24ec !important;
-  }
+/* CSS */
+.bg-css {
+  background: linear-gradient(45deg, #264DE4, #2965F1);
+}
 
-  .bg-bootstrap {
-    background-color: #9a3cf3 !important;
-  }
+/* JavaScript */
+.bg-js {
+  background: linear-gradient(45deg, #F0DB4F, #FFD700);
+}
 
-  .bg-astro {
-    background-color: #e32665 !important;
-  }
+/* React */
+.bg-react {
+  background: linear-gradient(45deg, #61DAFB, #00BFFF);
+}
+
+/* Node.js */
+.bg-nodejs {
+  background: linear-gradient(45deg, #8CC84B, #6DB35A);
+}
+
+/* Angular */
+.bg-angular {
+  background: linear-gradient(45deg, #DD0031, #C3002F);
+}
+
+/* Vue.js */
+.bg-vue {
+  background: linear-gradient(45deg, #41B883, #34495E);
+}
+
+/* Sass */
+.bg-sass {
+  background: linear-gradient(45deg, #CC6699, #CD6799);
+}
+
+/* jQuery */
+.bg-jquery {
+  background: linear-gradient(45deg, #0769AD, #4E92A5);
+}
+
+/* Bootstrap 5 */
+.bg-bootstrap {
+  background: linear-gradient(45deg, #7952B3, #563D7C);
+}
+
+/* Astro Framework */
+.bg-astro {
+  background: linear-gradient(45deg, #f00070, #cc004e);
+}
+
+/* Git */
+.bg-git {
+  background: linear-gradient(45deg, #F05032, #D14029);
+}
+
+/* GitHub */
+.bg-github {
+  background: linear-gradient(45deg, #181717, #24292E);
+}
+
 </style>
