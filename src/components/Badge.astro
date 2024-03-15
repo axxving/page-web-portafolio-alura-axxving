@@ -1,6 +1,4 @@
 ---
-import Scripts from "./Scripts.astro";
-
 // Badge.astro
 interface Props {
     nombre: string;
@@ -11,8 +9,6 @@ interface Props {
 const astroProps = Astro.props as Props;
 const { nombre, icono, color } = astroProps;
 ---
-
-<Scripts />
 <span class={`badge ${color} text-light`}>
     <i class={icono}></i>
     {nombre}
